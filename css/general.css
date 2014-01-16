@@ -1,0 +1,29 @@
+html {
+	background-color: #0A5997;	
+}
+
+h1{
+	text-align: left;
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 30px;	
+	color: #FFFFFF;
+	text-justify:auto;
+	width: 50%;
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+h2{
+	text-align: left;
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;	
+	color: #FFFFFF;
+	text-justify:auto;
+	width: 50%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+footer{
+	color:m#FFFFFF	;
+}
