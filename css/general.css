@@ -1,25 +1,47 @@
 html {
-	background-color: #0A5997;	
+	background-color: #085794;	
 }
 
 h1{
 	text-align: left;
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 30px;	
+	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 25px;	
 	color: #FFFFFF;
-	text-justify:auto;
-	width: 50%;
+	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 30px;
 }
 
+.unit-1{
+	padding-left: 30px;	
+}
+
+.unit-2{
+	padding-left: 30px;	
+}
+
+.carousel {
+	position: relative;
+}
+
+.carousel img {
+	float: center;
+	left: 0;
+	top: 0;
+	width: 75%;
+}
+
+.carousel-buttons {
+	padding-bottom: 15px;
+}
+
 h2{
 	text-align: left;
-	font: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 20px;	
 	color: #FFFFFF;
 	text-justify:auto;
-	width: 50%;
+	width: 100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
