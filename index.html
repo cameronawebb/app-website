@@ -4,16 +4,26 @@
 <meta charset="UTF-8">
 <title>Find This</title>
 <link href="css/general.css" rel="stylesheet">
+<link href="css/dialog-polyfill.css" rel="stylesheet">
+<link href="css/video.css" rel="stylesheet">
 </head>
 
 	<img class="logo" src="img/logo.svg" alt="find this magnified glass">
+    
+    <a class="btn-open" href="#">Open!</a>
+	
+	<dialog>
+		<div class="video"></div>
+		<button class="btn-close">X</button>
+	</dialog>
 
 <body>
 
 <div class="unit-1">
 
 <h1>
-	Find This. An app that allows you to find literally anything possible anywhere to pruchase or find it.
+	Find This. 
+    An app that allows you to find literally anything possible anywhere to pruchase or find it.
 </h1>
 
 </div>
@@ -40,7 +50,7 @@
 </div>
 
 <h2>
-	Find anything you want at anytime you need!
+	Find anything you want at anytime you need! Just watch!
 </h2>
 
 <button id=" ">Download Now!</button>
@@ -54,5 +64,10 @@
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="js/main.js"></script>
+
+ <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+ <script src="js/dialog-polyfill.js"></script>
+ <script src="js/video.js"></script>
+
 
 </html>
