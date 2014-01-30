@@ -32,3 +32,4 @@ $('.previous').on('click', function () {
 	switchItem(current, previous);
 
 });
+

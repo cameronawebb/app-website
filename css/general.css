@@ -2,6 +2,13 @@ html {
 	background-color: #085794;	
 }
 
+.btn-open{
+	color: #FFFFFF;
+	float: right;
+	padding-right: 35px;
+	padding-top: 115px;	
+}
+
 h1{
 	text-align: left;
 	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,6 +29,7 @@ h1{
 
 .carousel {
 	position: relative;
+	float: center;
 }
 
 .carousel img {

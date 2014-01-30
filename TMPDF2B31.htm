@@ -10,6 +10,13 @@ html {
 	background-color: #085794;	
 }
 
+.btn-open{
+	color: #FFFFFF;
+	float: right;
+	padding-right: 35px;
+	padding-top: 115px;	
+}
+
 h1{
 	text-align: left;
 	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,6 +37,7 @@ h1{
 
 .carousel {
 	position: relative;
+	float: center;
 }
 
 .carousel img {
@@ -37,6 +45,10 @@ h1{
 	left: 0;
 	top: 0;
 	width: 75%;
+}
+
+.carousel-buttons {
+	padding-bottom: 15px;
 }
 
 h2{
@@ -55,16 +67,102 @@ footer{
 }
 
 </style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: css/dialog-polyfill.css">
+<style type="text/css">
+
+dialog {
+  position: absolute;
+  left: 0; right: 0;
+  margin: auto;
+  border: solid;
+  padding: 1em;
+  background: white;
+  color: black;
+
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+
+  display: none;
+}
+
+dialog[open] {
+  display: block;
+}
+
+.backdrop {
+  position: fixed;
+  background: rgba(0,0,0,0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+</style>
+<link rel="stylesheet" title="Disabled for Preview-in-Browser: css/video.css">
+<style type="text/css">
+
+dialog {
+	border-radius: 6px;
+	border: 1px solid #333;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	padding: 1em;
+}
+
+dialog::backdrop {
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+dialog + .backdrop {
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+.btn-close {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	border: 2px solid #fff;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.5);
+	font-weight: bold;
+	line-height: 0.6;
+	font-size: 1rem;
+	cursor: pointer;
+	position: absolute;
+	right: -16px;
+	top: -16px;
+}
+
+
+
+</style>
 </head>
 
 	<img class="logo" src="img/logo.svg" alt="find this magnified glass">
+    
+    <a class="btn-open" href="#">Open!</a>
+	
+	<dialog>
+		<div class="video"></div>
+		<button class="btn-close">X</button>
+	</dialog>
 
 <body>
 
 <div class="unit-1">
 
 <h1>
-	Find This. An app that allows you to find literally anything possible anywhere to pruchase or find it.
+	Find This. 
+    An app that allows you to find literally anything possible anywhere to pruchase or find it.
 </h1>
 
 </div>
@@ -91,7 +189,7 @@ footer{
 </div>
 
 <h2>
-	Find anything you want at anytime you need!
+	Find anything you want at anytime you need! Just watch!
 </h2>
 
 <button id=" ">Download Now!</button>
@@ -105,5 +203,10 @@ footer{
 
 <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 <script src="js/main.js"></script>
+
+ <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+ <script src="js/dialog-polyfill.js"></script>
+ <script src="js/video.js"></script>
+
 
 </html>
