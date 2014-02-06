@@ -1,5 +1,11 @@
 html {
-	background-color: #085794;	
+	background-color: #000000;	
+}
+
+.logo{
+	width: 80%;
+	float: left;
+	display: block;	
 }
 
 .btn-open{
@@ -11,16 +17,23 @@ html {
 
 h1{
 	text-align: left;
-	font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: Helvetica, Arial, sans-serif;
 	font-size: 25px;	
 	color: #FFFFFF;
 	width: 100%;
 	padding-top: 15px;
-	padding-bottom: 30px;
+	display: block;
+}
+
+.compass{
+	width: 300px;
+	position: center;
+	float: center;
 }
 
 .unit-1{
-	padding-left: 30px;	
+	padding-left: 30px;
+	display: block;	
 }
 
 .unit-2{
@@ -28,7 +41,7 @@ h1{
 }
 
 .carousel {
-	position: relative;
+	position: center;
 	float: center;
 }
 
@@ -36,11 +49,12 @@ h1{
 	float: center;
 	left: 0;
 	top: 0;
-	width: 75%;
+	width: 100%;
 }
 
 .carousel-buttons {
 	padding-bottom: 15px;
+	float: center;
 }
 
 h2{
@@ -54,6 +68,76 @@ h2{
 	padding-bottom: 15px;
 }
 
+.wheel{
+	width: 240px;
+	opacity: 0;
+}
+
+.js-wheel-animate{
+-webkit-animation: dipper-fade 2s linear 1 forwards;	
+}
+
+@-webkit-keyframes dipper-fade{
+ 
+ 0%{
+	opacity: 0;	 
+ }
+100%{
+	opacity: 1; 
+ }
+}
+
 footer{
 	color:m#FFFFFF	;
+}
+
+@media only screen and (min-width: 38em){
+
+.logo{
+	width: 30%;
+	float: left;
+	display: block;	
+}
+
+.carousel img {
+	float: center;
+	left: 0;
+	top: 0;
+	width: 60%;
+}
+
+}
+
+@media only screen and (min-width: 60em){
+
+.logo{
+	width: 20%;
+	float: left;
+	display: block;	
+}
+
+.carousel img {
+	float: center;
+	left: 0;
+	top: 0;
+	width: 50%;
+}
+	
+}
+
+@media only screen and (min-width: 150em){
+
+.logo{
+	width: 10%;
+	float: left;
+	display: block;	
+}
+
+.carousel img {
+	float: center;
+	left: 0;
+	top: 0;
+	width: 65%;
+}
+	
 }
