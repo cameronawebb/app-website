@@ -25,6 +25,12 @@ h1{
 	display: block;
 }
 
+p{
+color: #FFFFFF;
+text-align: left;
+font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+}
+
 .compass{
 	width: 300px;
 	position: center;
@@ -75,6 +81,10 @@ h2{
 
 .js-wheel-animate{
 -webkit-animation: dipper-fade 2s linear 1 forwards;	
+}
+
+.rand-comment{
+	color: #FFFFFF; 
 }
 
 @-webkit-keyframes dipper-fade{
